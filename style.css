@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header section that creates the banner and naviagation links at the top*/
+.header{
+   background-color: #234C6A;
+}
+/*makes the header flexible and centers the items and sets flexibility nature*/
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Adjusts the icon's size based on the viewing proportions of the window, also sets max and min sizes*/
+nav img{
+    min-height: 50px;
+    max-height: 15vh;
+    
+}
+/*Center aligns text*/
+.nav-links{
+    flex: 1;
+    text-align: center;
+
+}
+/*Sets space between items*/
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+/*Sets font color and size (variable for window size)*/
+.nav-links ul li a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 6vmax; 
+    font-size: 4vmin;
+}
+/*The following makes the line appear when the mouse hovers over the navigation item
+   and disappear when it is no longer over it*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00fcff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/*Styling for the main text in the body of the site*/
+.text-box{
+    min-height: 79vh;
+    background-color: #1B3C53;
+}
+
+/*Sets header 1 text color and alignment*/
+.text-box h1{
+    color:#456882;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vmin;
+    font-size: 4vmax;
+}
+/*Sets the text color*/
+.text-box p{
+    color:#D2C1B6;
+    text-align: center;
+    width: 100%;
+    font-size: 1vmin;
+    font-size: 2vmax;
+}
+
+
+/*Styling for footer*/
+/*Sets background color and text size and color*/
+.footer{
+    color: #D2C1B6;
+    text-align: center;
+   background-color: #234C6A;
+   font-size: small;
+}
+
